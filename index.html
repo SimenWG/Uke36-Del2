@@ -3,96 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Oppgaver</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-    }
-    #colorList {
-        list-style-type: none;
-        padding: 0;
-    }
-    #colorList li {
-        cursor: pointer;
-        padding: 10px;
-        margin: 5px 0;
-        border: 1px solid #ddd;
-    }
-    #colorList li:hover {
-        background-color: #f0f0f0;
-    }
-
-    #imageContainer {
-        margin-bottom: 20px;
-    }
-    #imageContainer img {
-        max-width: 250px;
-        height: auto;
-    }
-    #songLink {
-        display: block;
-        margin-top: 10px;
-        font-size: 18px;
-        color: blue;
-        text-decoration: underline;
-        
-    }
-
-</style>
-
 <body>
-    <h1>Oppgave 1:</h1>
-    <h2>Lag en liste over din Favorittfrukt:</h2>
-    <input type="text" id="fruktInput" placeholder="Skriv en frukt"> 
-    <button onclick="leggTilFrukt()">Legg til</button>
+    <div class="container">
+        <h1>Oppgaver</h1>
 
-    <ul id="fruktListe"></ul> 
+        <div class="task">
+            <h2>Oppgave 1: Lag en liste over din favorittfrukt</h2>
+            <input type="text" id="fruktInput" placeholder="Skriv en frukt"> 
+            <button onclick="leggTilFrukt()">Legg til</button>
+            <ul id="fruktListe"></ul>
+        </div>
 
-    <h1>Oppgave 2:</h1>
-    <h2>Random Number Generator</h2>
+        <div class="task">
+            <h2>Oppgave 2: Random Number Generator</h2>
+            <label id="xlabel"></label><br>
+            <button type="button" id="Knapp">Trykk</button>
+        </div>
 
-    <label id=xlabel></label><br>
+        <div class="task">
+            <h2>Oppgave 3: Telle Elementer i Array</h2>
+            <label for="elementInput">Skriv inn en liste med elementer (kommaseparert):</label>
+            <input type="text" id="elementInput" placeholder="eple, mango, banan, etc">
+            <button type="button" id="countButton">Tell</button>
+            <ul id="resultList"></ul>
+        </div>
 
-    <button type="button" id="Knapp">Trykk</button>
+        <div class="task">
+            <h2>Oppgave 4: Fargevelger og Endrer</h2>
+            <label for="colorInput">Angi farge:</label>
+            <input type="text" id="colorInput" placeholder="red, blue, green">
+            <button type="button" id="addColorButton">Legg til farge</button>
+            <ul id="colorList"></ul>
+        </div>
 
-    <h1>Oppgave 3:</h1>
-    <h2>Telle elementer</h2>
-    <h1>Telle Elementer i Array</h1>
-    
-    <label for="elementInput">Skriv inn en liste med elementer (kommaseparert):</label>
-    <input type="text" id="elementInput" placeholder="eple, mango, banan, etc">
-    
-    <button type="button" id="countButton">Tell</button>
-    
-    <h2>Resultater:</h2>
-
-    <h1>Oppgave 4:</h1>
-
-    <h1>Fargevelger og Endrer</h1>
-    
-    <label for="colorInput">Angi farge:</label>
-    <input type="text" id="colorInput" placeholder="rød, blå, grønn">
-    <button type="button" id="addColorButton">Legg til farge</button>
-    
-    <h2>Fargeliste:</h2>
-    <ul id="colorList"></ul>
-
-    <ul id="resultList"></ul>
-
-    <h1>Oppgave 5</h1>
-    <h2>Tilfeldig sang (5 stk)</h2>
-    <a id="songLink" href="#" target="_blank">Link til sang</a>
-    <div id="imageContainer">
-        <img id="randomImage" src="" alt="Tilfeldig bilde">
+        <div class="task">
+            <h2>Oppgave 5: Tilfeldig sang (5 stk)</h2>
+            <a id="songLink" href="#" target="_blank">Link til sang</a>
+            <div id="imageContainer">
+                <img id="randomImage" src="" alt="Tilfeldig bilde">
+            </div>
+            <button type="button" id="changeImageButton">Bytt bilde</button>
+        </div>
     </div>
-    
-    <button type="button" id="changeImageButton">Bytt bilde</button>
-    
-
- 
 
     <script src="script.js"></script>
 </body>

@@ -1,35 +1,35 @@
 // Oppgave 1
 
-// let fruktArray = [];                                                        // Oppretter et array 
-//         function leggTilFrukt() {
-//             let fruktInput = document.getElementById('fruktInput').value;   // Henter teksten fra inputfeltet
-//             if (fruktInput !== "") {                                        // Sjekker at input ikke er tom 
-//                 fruktArray.push(fruktInput);                                // Legger til inputen i arrayet
-//                 oppdaterListe();                                            // Oppdaterer listen
-//                 document.getElementById('fruktInput').value = "";           // Tømmer inputfeltet
-//             }
-//         }
+ let fruktArray = [];                                                        // Oppretter et array 
+         function leggTilFrukt() {
+             let fruktInput = document.getElementById('fruktInput').value;   // Henter teksten fra inputfeltet
+             if (fruktInput !== "") {                                        // Sjekker at input ikke er tom 
+                 fruktArray.push(fruktInput);                                // Legger til inputen i arrayet
+                 oppdaterListe();                                            // Oppdaterer listen
+                 document.getElementById('fruktInput').value = "";           // Tømmer inputfeltet
+             }
+         }
 
-//         function oppdaterListe() {
-//             let fruktListe = document.getElementById('fruktListe');         // Henter ul-elementet 
-//             fruktListe.innerHTML = "";                                      // Tømmer nåværende innhold i ul-elementet
+         function oppdaterListe() {
+             let fruktListe = document.getElementById('fruktListe');         // Henter ul-elementet 
+             fruktListe.innerHTML = "";                                      // Tømmer nåværende innhold i ul-elementet
 
-//             for (let i = 0; i < fruktArray.length; i++) {
-//                 let li = document.createElement('li');                      // Oppretter li-element
-//                 li.textContent = fruktArray[i];                             // Setter teksten til frukten fra arrayet
-//                 fruktListe.appendChild(li);                                 // Legger li-elementet til i ul-listen
-//             }
-//         }
+             for (let i = 0; i < fruktArray.length; i++) {
+                 let li = document.createElement('li');                      // Oppretter li-element
+                 li.textContent = fruktArray[i];                             // Setter teksten til frukten fra arrayet
+                 fruktListe.appendChild(li);                                 // Legger li-elementet til i ul-listen
+             }
+         }
 
 
 // Oppgave 2 
 
-// let x = Math.floor(Math.random() * 100) + 1;                                // Oppretter en variabel for å lagre en tilfeldig tallverdi mellom 1 og 100
+ let x = Math.floor(Math.random() * 100) + 1;                                // Oppretter en variabel for å lagre en tilfeldig tallverdi mellom 1 og 100
 
-// document.getElementById("Knapp").onclick = function () {                    // Setter opp en funksjon som kjører når knappen med ID Knapp blir klikket
-//     x = Math.floor(Math.random() * 100) + 1;                                // Genererer en ny tilfeldig tallverdi mellom 1 og 100
-//     document.getElementById("xlabel").innerHTML = x;                        // Oppdaterer innholdet i label-elementet med ID 'xlabel' med den nye verdien
-// };
+ document.getElementById("Knapp").onclick = function () {                    // Setter opp en funksjon som kjører når knappen med ID Knapp blir klikket
+     x = Math.floor(Math.random() * 100) + 1;                                // Genererer en ny tilfeldig tallverdi mellom 1 og 100
+     document.getElementById("xlabel").innerHTML = x;                        // Oppdaterer innholdet i label-elementet med ID 'xlabel' med den nye verdien
+ };
 
 // Oppgave 3 
 
@@ -58,27 +58,27 @@ document.getElementById("countButton").onclick = function () {                 /
 
 // Oppgave 4
 
-// document.getElementById("addColorButton").onclick = function () {
+ document.getElementById("addColorButton").onclick = function () {
    
-//     let colorInput = document.getElementById("colorInput").value;
-//     let colors = colorInput.split(',').map(color => color.trim()).filter(color => color);
+     let colorInput = document.getElementById("colorInput").value;
+     let colors = colorInput.split(',').map(color => color.trim()).filter(color => color);
 
-//     let colorList = document.getElementById("colorList");
-//     colorList.innerHTML = '';
+     let colorList = document.getElementById("colorList");
+     colorList.innerHTML = '';
 
  
-//     for (let color of colors) {
-//         let li = document.createElement('li');
-//         li.textContent = color;
-//         li.style.backgroundColor = color;                                      // Sett bakgrunnsfargen til li-elementet
-//         li.onclick = function () {
-//             document.body.style.backgroundColor = color;                       // Endre bakgrunnsfargen på nettsiden
-//         };
-//         colorList.appendChild(li);
-//     }
+     for (let color of colors) {
+         let li = document.createElement('li');
+         li.textContent = color;
+         li.style.backgroundColor = color;                                      // Sett bakgrunnsfargen til li-elementet
+         li.onclick = function () {
+             document.body.style.backgroundColor = color;                       // Endre bakgrunnsfargen på nettsiden
+         };
+         colorList.appendChild(li);
+     }
     
-//     document.getElementById("colorInput").value = '';
-// };
+     document.getElementById("colorInput").value = '';
+ };
 
 // Oppgave 5
 // Array med bildebaner
